@@ -1,8 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Lord of the Rims - Orcs and Goblins 1.0</name>
-	<author>Mingji Lim aka WalkingProblem</author>
-	<url>http://walkingproblem.com</url>
-	<targetVersion>0.19.0</targetVersion>
-	<description>Orc, Goblins and Uruk Hai....</description>
+  <name>Lord of the Rims - Orcs and Goblins (Continued)</name>
+  <packageId>Mlie.LordoftheRimsOrcsandGoblins</packageId>
+  <author>Mingji Lim aka WalkingProblem</author>
+  <url>https://github.com/emipa606/LordoftheRimsOrcsandGoblins</url>
+  <supportedVersions>
+    <li>1.3</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>erdelf.HumanoidAlienRaces</packageId>
+      <displayName>Humanoid Alien Races</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
+      <downloadUrl>https://github.com/erdelf/AlienRaces/releases/latest</downloadUrl>
+    </li>
+		<li>
+			<packageId>jecrell.jecstools</packageId>
+			<displayName>JecsTools</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/932008009</steamWorkshopUrl>
+		</li>
+  </modDependencies>
+  <loadAfter>
+    <li>erdelf.HumanoidAlienRaces</li>
+		<li>jecrell.jecstools</li>
+  </loadAfter>
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
+Update of Mingji Lim aka WalkingProblems mod
+https://steamcommunity.com/sharedfiles/filedetails/?id=
+
+[img]https://i.imgur.com/pufA0kM.png[/img]
+
+[table]
+    [tr]
+        [td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+        [td][url=https://github.com/emipa606/LordoftheRimsOrcsandGoblins][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+    [/tr]
+[/table]
+	
+[img]https://i.imgur.com/Z4GOv8H.png[/img]
+
+</description>
 </ModMetaData>
