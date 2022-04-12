@@ -106,10 +106,10 @@
               <path>MistyMountainGoblin/Ears/mistyEar</path>
               <bodyPart>Head</bodyPart>
               <inFrontOfBody>true</inFrontOfBody>
-	<defaultOffset>Tail</defaultOffset>
+              <defaultOffset>Tail</defaultOffset>
               <offsets>
                 <south>
-              <layerOffset>0</layerOffset>
+                  <layerOffset>0</layerOffset>
                   <bodyTypes>
                     <Male>(-0.42,0.36)</Male>
                     <Female>(-0.42,0.36)</Female>
@@ -121,7 +121,7 @@
                   </crownTypes>
                 </south>
                 <north>
-              <layerOffset>0</layerOffset>
+                  <layerOffset>0</layerOffset>
                   <bodyTypes>
                     <Male>(0,0.69)</Male>
                     <Female>(0,0.69)</Female>
@@ -133,7 +133,7 @@
                   </crownTypes>
                 </north>
                 <east>
-              <layerOffset>0</layerOffset>
+                  <layerOffset>0</layerOffset>
                   <bodyTypes>
                     <Male>(-0.5,0.35)</Male>
                     <Female>(-0.5,0.35)</Female>
@@ -151,51 +151,51 @@
               </hiddenUnderApparelFor>
             </li>
           </bodyAddons>
-		  		  <colorChannels>
-			<li>
-				<name>skin</name>
-				<first Class="ColorGenerator_Options">
-					<options>
-              <li>
-                <weight>1</weight>
-                <only>RGBA(1.0,1.0,1.0,1)</only>
-              </li>
-              <li>
-                <weight>5</weight>
-                <only>RGBA(0.5,0.5,0.5,1)</only>
-              </li>
-              <li>
-                <weight>5</weight>
-                <only>RGBA(0.3,0.3,0.3,1)</only>
-              </li>
-              <li>
-                <weight>25</weight>
-                <only>RGBA(1.0,0.8,0.8,1)</only>
-              </li>
-              <li>
-                <weight>25</weight>
-                <only>RGBA(0.7,0.5,0.5,1)</only>
-              </li>
-              <li>
-                <weight>25</weight>
-                <only>RGBA(0.9,0.7,0.7,1)</only>
-              </li>
-              <li>
-                <weight>2</weight>
-                <only>RGBA(0.4,0.2,0.2,1)</only>
-              </li>
-              <li>
-                <weight>2</weight>
-                <only>RGBA(0.6,0.4,0.4,1)</only>
-              </li>
-              <li>
-                <weight>1</weight>
-                <only>RGBA(0.3,0.5,0.6,1)</only>
-              </li>
-					</options>
-				</first>
-			</li>
-		</colorChannels>
+          <colorChannels>
+            <li>
+              <name>skin</name>
+              <first Class="ColorGenerator_Options">
+                <options>
+                  <li>
+                    <weight>1</weight>
+                    <only>RGBA(1.0,1.0,1.0,1)</only>
+                  </li>
+                  <li>
+                    <weight>5</weight>
+                    <only>RGBA(0.5,0.5,0.5,1)</only>
+                  </li>
+                  <li>
+                    <weight>5</weight>
+                    <only>RGBA(0.3,0.3,0.3,1)</only>
+                  </li>
+                  <li>
+                    <weight>25</weight>
+                    <only>RGBA(1.0,0.8,0.8,1)</only>
+                  </li>
+                  <li>
+                    <weight>25</weight>
+                    <only>RGBA(0.7,0.5,0.5,1)</only>
+                  </li>
+                  <li>
+                    <weight>25</weight>
+                    <only>RGBA(0.9,0.7,0.7,1)</only>
+                  </li>
+                  <li>
+                    <weight>2</weight>
+                    <only>RGBA(0.4,0.2,0.2,1)</only>
+                  </li>
+                  <li>
+                    <weight>2</weight>
+                    <only>RGBA(0.6,0.4,0.4,1)</only>
+                  </li>
+                  <li>
+                    <weight>1</weight>
+                    <only>RGBA(0.3,0.5,0.6,1)</only>
+                  </li>
+                </options>
+              </first>
+            </li>
+          </colorChannels>
           <customDrawSize>(0.8, 0.8)</customDrawSize>
           <customHeadDrawSize>(0.8, 0.8)</customHeadDrawSize>
           <customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize>
@@ -207,24 +207,24 @@
           <head>MistyMountainGoblin/Heads/</head>
         </li>
       </graphicPaths>
-	  	            <styleSettings>
-                <li>
-                    <key>HairDef</key>
-                    <value>
-					    <styleTagsOverride>
-                            <li>LotROG_OrcGoblin</li>
-                        </styleTagsOverride>
-                    </value>
-                </li>
-                <li>
-                    <key>BeardDef</key>
-                    <value>
-					<styleTagsOverride>
-						<li>NoBeard</li>
-                        </styleTagsOverride>
-                    </value>
-                </li>
-            </styleSettings>
+      <styleSettings>
+        <li>
+          <key>HairDef</key>
+          <value>
+            <styleTagsOverride>
+              <li>LotROG_OrcGoblin</li>
+            </styleTagsOverride>
+          </value>
+        </li>
+        <li>
+          <key>BeardDef</key>
+          <value>
+            <styleTagsOverride>
+              <li>NoBeard</li>
+            </styleTagsOverride>
+          </value>
+        </li>
+      </styleSettings>
       <thoughtSettings>
         <cannotReceiveThoughts>
           <li>EnvironmentDark</li>

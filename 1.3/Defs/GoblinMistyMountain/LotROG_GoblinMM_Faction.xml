@@ -25,9 +25,9 @@
     <backstoryCategories>
       <li>Pirate</li>
     </backstoryCategories>
-	<allowedCultures>
-	<li>Kriminul</li>
-</allowedCultures>
+    <allowedCultures>
+      <li>Kriminul</li>
+    </allowedCultures>
     <geneticVariance>0.8</geneticVariance>
     <caravanTraderKinds>
       <li>Caravan_Outlander_BulkGoods</li>

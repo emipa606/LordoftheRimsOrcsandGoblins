@@ -49,7 +49,7 @@
     <destroyOnDrop>True</destroyOnDrop>
     <weaponClasses>
       <li>MeleePiercer</li>
-    </weaponClasses>    
+    </weaponClasses>
     <smeltable>true</smeltable>
     <burnableByRecipe>true</burnableByRecipe>
     <thingCategories>
@@ -69,7 +69,7 @@
       <ComfyTemperatureMin>-45</ComfyTemperatureMin>
       <MarketValue>1100</MarketValue>
     </statBases>
-<tools>
+    <tools>
       <li>
         <label>left fist</label>
         <capacities>
@@ -239,8 +239,8 @@
       </li>
     </comps>
     <tradeability>None</tradeability>
-    <destroyOnDrop>True</destroyOnDrop>    
-	<weaponClasses>
+    <destroyOnDrop>True</destroyOnDrop>
+    <weaponClasses>
       <li>MeleeBlunt</li>
     </weaponClasses>
     <smeltable>true</smeltable>
@@ -262,7 +262,7 @@
       <ComfyTemperatureMin>-45</ComfyTemperatureMin>
       <MarketValue>1100</MarketValue>
     </statBases>
-<tools>
+    <tools>
       <li>
         <label>left fist</label>
         <capacities>

@@ -101,10 +101,10 @@
               <path>UrukHai/Ears/urukEar</path>
               <bodyPart>Head</bodyPart>
               <inFrontOfBody>true</inFrontOfBody>
-	<defaultOffset>Tail</defaultOffset>
+              <defaultOffset>Tail</defaultOffset>
               <offsets>
                 <south>
-              <layerOffset>0</layerOffset>
+                  <layerOffset>0</layerOffset>
                   <bodyTypes>
                     <Male>(-0.42,0.46)</Male>
                     <Female>(-0.42,0.46)</Female>
@@ -117,7 +117,7 @@
                   </crownTypes>
                 </south>
                 <north>
-              <layerOffset>0</layerOffset>
+                  <layerOffset>0</layerOffset>
                   <bodyTypes>
                     <Male>(0,0.82)</Male>
                     <Female>(0,0.82)</Female>
@@ -130,7 +130,7 @@
                   </crownTypes>
                 </north>
                 <east>
-              <layerOffset>0</layerOffset>
+                  <layerOffset>0</layerOffset>
                   <bodyTypes>
                     <Male>(-0.5,0.5)</Male>
                     <Female>(-0.5,0.5)</Female>
@@ -148,35 +148,36 @@
                 <li>FullHead</li>
               </hiddenUnderApparelFor>
             </li>
-          </bodyAddons>		  <colorChannels>
-			<li>
-				<name>skin</name>
-				<first Class="ColorGenerator_Options">
-					<options>
-              <li>
-                <weight>5</weight>
-                <only>RGBA(1.0,1.0,1.0,1)</only>
-              </li>
-              <li>
-                <weight>10</weight>
-                <only>RGBA(0.5,0.5,0.5,1)</only>
-              </li>
-              <li>
-                <weight>10</weight>
-                <only>RGBA(0.3,0.3,0.3,1)</only>
-              </li>
-              <li>
-                <weight>15</weight>
-                <only>RGBA(0.8,0.5,0.5,1)</only>
-              </li>
-              <li>
-                <weight>15</weight>
-                <only>RGBA(0.8,0.3,0.3,1)</only>
-              </li>
-					</options>
-				</first>
-			</li>
-		</colorChannels>
+          </bodyAddons>
+          <colorChannels>
+            <li>
+              <name>skin</name>
+              <first Class="ColorGenerator_Options">
+                <options>
+                  <li>
+                    <weight>5</weight>
+                    <only>RGBA(1.0,1.0,1.0,1)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(0.5,0.5,0.5,1)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(0.3,0.3,0.3,1)</only>
+                  </li>
+                  <li>
+                    <weight>15</weight>
+                    <only>RGBA(0.8,0.5,0.5,1)</only>
+                  </li>
+                  <li>
+                    <weight>15</weight>
+                    <only>RGBA(0.8,0.3,0.3,1)</only>
+                  </li>
+                </options>
+              </first>
+            </li>
+          </colorChannels>
           <customDrawSize>(1.0, 1.0)</customDrawSize>
           <customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
           <customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
@@ -188,25 +189,24 @@
           <head>UrukHai/Heads/</head>
         </li>
       </graphicPaths>
-
-	  	            <styleSettings>
-                <li>
-                    <key>HairDef</key>
-                    <value>
-					    <styleTagsOverride>
-                            <li>LotROG_OrcGoblin</li>
-                        </styleTagsOverride>
-                    </value>
-                </li>
-                <li>
-                    <key>BeardDef</key>
-                    <value>
-					<styleTagsOverride>
-						<li>NoBeard</li>
-                        </styleTagsOverride>
-                    </value>
-                </li>
-            </styleSettings>
+      <styleSettings>
+        <li>
+          <key>HairDef</key>
+          <value>
+            <styleTagsOverride>
+              <li>LotROG_OrcGoblin</li>
+            </styleTagsOverride>
+          </value>
+        </li>
+        <li>
+          <key>BeardDef</key>
+          <value>
+            <styleTagsOverride>
+              <li>NoBeard</li>
+            </styleTagsOverride>
+          </value>
+        </li>
+      </styleSettings>
       <thoughtSettings>
         <cannotReceiveThoughts>
           <li>EnvironmentDark</li>

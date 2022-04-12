@@ -95,36 +95,36 @@
           <alienbodytypes>
             <li>Hulk</li>
           </alienbodytypes>
-          <useGenderedHeads>false</useGenderedHeads>		  
-		  <colorChannels>
-			<li>
-				<name>skin</name>
-				<first Class="ColorGenerator_Options">
-					<options>
-              <li>
-                <weight>5</weight>
-                <only>RGBA(1.0,1.0,1.0,1)</only>
-              </li>
-              <li>
-                <weight>10</weight>
-                <only>RGBA(0.5,0.5,0.5,1)</only>
-              </li>
-              <li>
-                <weight>10</weight>
-                <only>RGBA(0.3,0.3,0.3,1)</only>
-              </li>
-              <li>
-                <weight>15</weight>
-                <only>RGBA(0.8,0.5,0.5,1)</only>
-              </li>
-              <li>
-                <weight>15</weight>
-                <only>RGBA(0.8,0.3,0.3,1)</only>
-              </li>
-					</options>
-				</first>
-			</li>
-		</colorChannels>
+          <useGenderedHeads>false</useGenderedHeads>
+          <colorChannels>
+            <li>
+              <name>skin</name>
+              <first Class="ColorGenerator_Options">
+                <options>
+                  <li>
+                    <weight>5</weight>
+                    <only>RGBA(1.0,1.0,1.0,1)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(0.5,0.5,0.5,1)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(0.3,0.3,0.3,1)</only>
+                  </li>
+                  <li>
+                    <weight>15</weight>
+                    <only>RGBA(0.8,0.5,0.5,1)</only>
+                  </li>
+                  <li>
+                    <weight>15</weight>
+                    <only>RGBA(0.8,0.3,0.3,1)</only>
+                  </li>
+                </options>
+              </first>
+            </li>
+          </colorChannels>
           <customDrawSize>(1.725, 1.725)</customDrawSize>
           <customHeadDrawSize>(0.7, 0.7)</customHeadDrawSize>
           <customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
@@ -136,25 +136,24 @@
           <head>OlogHai/Heads/</head>
         </li>
       </graphicPaths>
-
-	  	            <styleSettings>
-                <li>
-                    <key>HairDef</key>
-                    <value>
-					    <styleTagsOverride>
-                            <li>LotROG_OrcGoblin</li>
-                        </styleTagsOverride>
-                    </value>
-                </li>
-                <li>
-                    <key>BeardDef</key>
-                    <value>
-					<styleTagsOverride>
-						<li>NoBeard</li>
-                        </styleTagsOverride>
-                    </value>
-                </li>
-            </styleSettings>
+      <styleSettings>
+        <li>
+          <key>HairDef</key>
+          <value>
+            <styleTagsOverride>
+              <li>LotROG_OrcGoblin</li>
+            </styleTagsOverride>
+          </value>
+        </li>
+        <li>
+          <key>BeardDef</key>
+          <value>
+            <styleTagsOverride>
+              <li>NoBeard</li>
+            </styleTagsOverride>
+          </value>
+        </li>
+      </styleSettings>
       <thoughtSettings>
         <cannotReceiveThoughts>
           <li>EnvironmentDark</li>
