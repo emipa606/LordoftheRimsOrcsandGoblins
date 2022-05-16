@@ -211,6 +211,7 @@
         <cannotReceiveThoughts>
           <li>EnvironmentDark</li>
           <li>NeedOutdoors</li>
+          <li>NeedBeauty</li>
         </cannotReceiveThoughts>
         <replacerList>
           <li>
@@ -229,10 +230,10 @@
             <original>SleptInBarracks</original>
             <replacer>LotROG_SleptInBarracks</replacer>
           </li>
-          <li>
-            <original>NeedBeauty</original>
-            <replacer>LotROG_NeedBeauty</replacer>
-          </li>
+          <!-- <li> -->
+          <!-- <original>NeedBeauty</original> -->
+          <!-- <replacer>LotROG_NeedBeauty</replacer> -->
+          <!-- </li> -->
         </replacerList>
       </thoughtSettings>
     </alienRace>

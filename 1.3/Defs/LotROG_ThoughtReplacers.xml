@@ -236,40 +236,41 @@
       </li>
     </stages>
   </ThoughtDef>
-  <ThoughtDef>
-    <defName>LotROG_NeedBeauty</defName>
-    <workerClass>ThoughtWorker_NeedBeauty</workerClass>
-    <stages>
-      <li>
-        <label>vile environment</label>
-        <description>Everything here is caked with enough filth to eat. Yeaaaaah!</description>
-        <baseMoodEffect>15</baseMoodEffect>
-      </li>
-      <li>
-        <label>disgusting environment</label>
-        <description>This place turns up my nose real good, and I love a good stink.</description>
-        <baseMoodEffect>10</baseMoodEffect>
-      </li>
-      <li>
-        <label>gross environment</label>
-        <description>I always fancy myself a few bugs around to squish and snack on.</description>
-        <baseMoodEffect>5</baseMoodEffect>
-      </li>
-      <li>
-        <label>pleasant environment</label>
-        <description>This place is shite.</description>
-        <baseMoodEffect>-5</baseMoodEffect>
-      </li>
-      <li>
-        <label>very pleasant environment</label>
-        <description>This place right turns my gut. It's not beautiful, not a bit, not at all like my family's mess pile.</description>
-        <baseMoodEffect>-10</baseMoodEffect>
-      </li>
-      <li>
-        <label>beautiful environment</label>
-        <description>Get me out of here!!!</description>
-        <baseMoodEffect>-15</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
+  <!-- Not possible without a custom workerClass as it overrides it for all pawns if using the vanilla class -->
+  <!-- <ThoughtDef> -->
+  <!-- <defName>LotROG_NeedBeauty</defName> -->
+  <!-- <workerClass>ThoughtWorker_NeedBeauty</workerClass> -->
+  <!-- <stages> -->
+  <!-- <li> -->
+  <!-- <label>vile environment</label> -->
+  <!-- <description>Everything here is caked with enough filth to eat. Yeaaaaah!</description> -->
+  <!-- <baseMoodEffect>15</baseMoodEffect> -->
+  <!-- </li> -->
+  <!-- <li> -->
+  <!-- <label>disgusting environment</label> -->
+  <!-- <description>This place turns up my nose real good, and I love a good stink.</description> -->
+  <!-- <baseMoodEffect>10</baseMoodEffect> -->
+  <!-- </li> -->
+  <!-- <li> -->
+  <!-- <label>gross environment</label> -->
+  <!-- <description>I always fancy myself a few bugs around to squish and snack on.</description> -->
+  <!-- <baseMoodEffect>5</baseMoodEffect> -->
+  <!-- </li> -->
+  <!-- <li> -->
+  <!-- <label>pleasant environment</label> -->
+  <!-- <description>This place is shite.</description> -->
+  <!-- <baseMoodEffect>-5</baseMoodEffect> -->
+  <!-- </li> -->
+  <!-- <li> -->
+  <!-- <label>very pleasant environment</label> -->
+  <!-- <description>This place right turns my gut. It's not beautiful, not a bit, not at all like my family's mess pile.</description> -->
+  <!-- <baseMoodEffect>-10</baseMoodEffect> -->
+  <!-- </li> -->
+  <!-- <li> -->
+  <!-- <label>beautiful environment</label> -->
+  <!-- <description>Get me out of here!!!</description> -->
+  <!-- <baseMoodEffect>-15</baseMoodEffect> -->
+  <!-- </li> -->
+  <!-- </stages> -->
+  <!-- </ThoughtDef> -->
 </Defs>

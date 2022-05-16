@@ -239,6 +239,7 @@
         <cannotReceiveThoughts>
           <li>EnvironmentDark</li>
           <li>NeedOutdoors</li>
+          <li>NeedBeauty</li>
         </cannotReceiveThoughts>
       </thoughtSettings>
     </alienRace>
