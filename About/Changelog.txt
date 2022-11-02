@@ -1,5 +1,8 @@
 # Changelog for LordoftheRimsOrcsandGoblins
 
+1.4.1 - Mod updated for 1.4 and passed autotests
+
+
 1.3.2 - Removed the need for beauty replacement as it requires a custom class to not override all pawns beauty need.
 
 

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>MistyMountainGoblin_Average_Normal</defName>
+    <graphicPath>MistyMountainGoblin/Heads/Average_Normal</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>MoriaGoblin_Average_Normal</defName>
+    <graphicPath>MoriaGoblin/Heads/Average_Normal</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>GundabadOrc_Average_Normal</defName>
+    <graphicPath>GundabadOrc/Heads/Average_Normal</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>MordorOrc_Average_Normal</defName>
+    <graphicPath>MordorOrc/Heads/Average_Normal</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>UrukHai_Average_Normal</defName>
+    <graphicPath>UrukHai/Heads/Average_Normal</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef>
+</Defs>
