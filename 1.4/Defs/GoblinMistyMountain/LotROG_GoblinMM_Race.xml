@@ -99,6 +99,8 @@
           </headTypes>
           <bodyTypes Inherit="False">
             <li>Thin</li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
           </bodyTypes>
           <bodyAddons>
             <li>
@@ -106,6 +108,7 @@
               <bodyPart>Head</bodyPart>
               <inFrontOfBody>true</inFrontOfBody>
               <defaultOffset>Tail</defaultOffset>
+              <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
               <offsets>
                 <south>
                   <layerOffset>0</layerOffset>
@@ -114,6 +117,8 @@
                     <Female>(-0.42,0.36)</Female>
                     <Fat>(-0.42,0.36)</Fat>
                     <Thin>(-0.42,0.36)</Thin>
+                    <Baby MayRequire="ludeon.rimworld.biotech">(-0.42,0.36)</Baby>
+                    <Child MayRequire="ludeon.rimworld.biotech">(-0.42,0.36)</Child>
                   </bodyTypes>
                   <headTypes>
                     <MistyMountainGoblin_Average_Normal>(0,0)</MistyMountainGoblin_Average_Normal>
@@ -126,6 +131,8 @@
                     <Female>(0,0.69)</Female>
                     <Fat>(0,0.69)</Fat>
                     <Thin>(0,0.69)</Thin>
+                    <Baby MayRequire="ludeon.rimworld.biotech">(0,0.69)</Baby>
+                    <Child MayRequire="ludeon.rimworld.biotech">(0,0.69)</Child>
                   </bodyTypes>
                   <headTypes>
                     <MistyMountainGoblin_Average_Normal>(0,0)</MistyMountainGoblin_Average_Normal>
@@ -138,6 +145,8 @@
                     <Female>(-0.5,0.35)</Female>
                     <Fat>(-0.5,0.35)</Fat>
                     <Thin>(-0.5,0.35)</Thin>
+                    <Baby MayRequire="ludeon.rimworld.biotech">(-0.5,0.35)</Baby>
+                    <Child MayRequire="ludeon.rimworld.biotech">(-0.5,0.35)</Child>
                   </bodyTypes>
                   <headTypes>
                     <MistyMountainGoblin_Average_Normal>(0,0)</MistyMountainGoblin_Average_Normal>
@@ -364,9 +373,21 @@
       </specialShadowData>
       <ageGenerationCurve>
         <points>
-          <li>(3,0)</li>
-          <li>(5,100)</li>
-          <li>(10,50)</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li>
+          <!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->
+          <li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li>
+          <!-- End exclude -->
+          <li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
+          <li>(14,0)</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
+          <!-- <li>(3,0)</li> -->
+          <!-- <li>(5,100)</li> -->
+          <!-- <li>(10,50)</li> -->
           <li>(15,5)</li>
           <li>(20,0)</li>
         </points>

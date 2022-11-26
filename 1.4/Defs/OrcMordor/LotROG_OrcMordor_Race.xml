@@ -94,6 +94,8 @@
           </headTypes>
           <bodyTypes Inherit="False">
             <li>Male</li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
           </bodyTypes>
           <bodyAddons>
             <li>
@@ -101,6 +103,7 @@
               <bodyPart>Head</bodyPart>
               <inFrontOfBody>true</inFrontOfBody>
               <defaultOffset>Tail</defaultOffset>
+              <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
               <offsets>
                 <south>
                   <layerOffset>0</layerOffset>
@@ -109,6 +112,8 @@
                     <Female>(-0.42,0.46)</Female>
                     <Fat>(-0.42,0.46)</Fat>
                     <Thin>(-0.42,0.46)</Thin>
+                    <Baby MayRequire="ludeon.rimworld.biotech">(-0.42,0.46)</Baby>
+                    <Child MayRequire="ludeon.rimworld.biotech">(-0.42,0.46)</Child>
                   </bodyTypes>
                   <headTypes>
                     <MordorOrc_Average_Normal>(0,0.00)</MordorOrc_Average_Normal>
@@ -121,6 +126,8 @@
                     <Female>(0,0.79)</Female>
                     <Fat>(0,0.79)</Fat>
                     <Thin>(0,0.79)</Thin>
+                    <Baby MayRequire="ludeon.rimworld.biotech">(0,0.79)</Baby>
+                    <Child MayRequire="ludeon.rimworld.biotech">(0,0.79)</Child>
                   </bodyTypes>
                   <headTypes>
                     <MordorOrc_Average_Normal>(0,0.0)</MordorOrc_Average_Normal>
@@ -133,6 +140,8 @@
                     <Female>(-0.5,0.45)</Female>
                     <Fat>(-0.5,0.45)</Fat>
                     <Thin>(-0.5,0.45)</Thin>
+                    <Baby MayRequire="ludeon.rimworld.biotech">(-0.5,0.45)</Baby>
+                    <Child MayRequire="ludeon.rimworld.biotech">(-0.5,0.45)</Child>
                   </bodyTypes>
                   <headTypes>
                     <MordorOrc_Average_Normal>(0,0.0)</MordorOrc_Average_Normal>
@@ -370,9 +379,21 @@
       </specialShadowData>
       <ageGenerationCurve>
         <points>
-          <li>(3,0)</li>
-          <li>(5,100)</li>
-          <li>(10,80)</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li>
+          <!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->
+          <li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li>
+          <!-- End exclude -->
+          <li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
+          <li>(14,0)</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
+          <!-- <li>(3,0)</li> -->
+          <!-- <li>(5,100)</li> -->
+          <!-- <li>(10,80)</li> -->
           <li>(15,25)</li>
           <li>(20,10)</li>
           <li>(25,0)</li>
