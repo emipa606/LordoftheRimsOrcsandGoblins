@@ -25,3 +25,4 @@ Orc, Goblins and Uruk Hai....
 
 
 
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2793442551]Last updated 2023-01-09
