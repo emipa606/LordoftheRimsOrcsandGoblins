@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <AlienRace.RaceSettings>
-    <defName>LotROG_OrcMordorSettings</defName>
+    <defName>LotROG_OrcGundabadSettings</defName>
     <pawnKindSettings>
       <startingColonists>
         <li>
           <pawnKindEntries>
             <li>
               <kindDefs>
-                <li>LotROG_OrcMordorColonist</li>
+                <li>LotROG_OrcGundabad</li>
               </kindDefs>
               <chance>10.0</chance>
             </li>
@@ -21,7 +21,7 @@
       <alienslavekinds>
         <li>
           <kindDefs>
-            <li>LotROG_OrcMordor</li>
+            <li>LotROG_OrcGundabad</li>
           </kindDefs>
           <chance>5.0</chance>
         </li>
@@ -29,7 +29,7 @@
       <alienrefugeekinds>
         <li>
           <kindDefs>
-            <li>LotROG_OrcMordor</li>
+            <li>LotROG_OrcGundabad</li>
           </kindDefs>
           <chance>10.0</chance>
         </li>
@@ -39,7 +39,7 @@
           <pawnKindEntries>
             <li>
               <kindDefs>
-                <li>LotROG_OrcMordor</li>
+                <li>LotROG_OrcGundabad</li>
               </kindDefs>
               <chance>10.0</chance>
             </li>
@@ -52,9 +52,9 @@
     </pawnKindSettings>
   </AlienRace.RaceSettings>
   <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-    <defName>Alien_OrcMordor</defName>
-    <label>mordor orc</label>
-    <description>Mordor Orc description</description>
+    <defName>Alien_OrcGundabad</defName>
+    <label>gundabad orc</label>
+    <description>gundabad Orc description</description>
     <alienRace>
       <generalSettings>
         <maleGenderProbability>0.9</maleGenderProbability>
@@ -77,31 +77,40 @@
             <chance>50</chance>
           </li>
           <li>
-            <defName>Neurotic</defName>
+            <defName Degree="2">Neurotic</defName>
             <chance>25</chance>
-            <degree>2</degree>
           </li>
           <li>
-            <defName>Nerves</defName>
+            <defName Degree="-1">Nerves</defName>
             <chance>25</chance>
-            <degree>-1</degree>
           </li>
         </forcedRaceTraitEntries>
         <!--<maxDamageForSocialfight>6</maxDamageForSocialfight>-->
         <alienPartGenerator>
-          <aliencrowntypes>
-            <li>Average_Normal</li>
-          </aliencrowntypes>
-          <alienbodytypes>
+          <headTypes Inherit="False">
+            <li>GundabadOrc_Average_Normal</li>
+          </headTypes>
+          <bodyTypes Inherit="False">
             <li>Male</li>
-          </alienbodytypes>
-          <useGenderedHeads>false</useGenderedHeads>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+          </bodyTypes>
           <bodyAddons>
             <li>
-              <path>MordorOrc/Ears/mordorEar</path>
-              <bodyPart>Head</bodyPart>
+              <path>GundabadOrc/Ears/gundabadEar</path>
+              <conditions>
+                <Apparel>
+                  <hiddenUnderApparelFor>
+                    <li>FullHead</li>
+                  </hiddenUnderApparelFor>
+                </Apparel>
+                <BodyPart>
+                  <bodyPart>Head</bodyPart>
+                </BodyPart>
+              </conditions>
               <inFrontOfBody>true</inFrontOfBody>
               <defaultOffset>Tail</defaultOffset>
+              <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
               <offsets>
                 <south>
                   <layerOffset>0</layerOffset>
@@ -110,40 +119,46 @@
                     <Female>(-0.42,0.46)</Female>
                     <Fat>(-0.42,0.46)</Fat>
                     <Thin>(-0.42,0.46)</Thin>
+                    <Hulk>(-0.42,0.46)</Hulk>
+                    <Baby MayRequire="ludeon.rimworld.biotech">(-0.42,0.46)</Baby>
+                    <Child MayRequire="ludeon.rimworld.biotech">(-0.42,0.46)</Child>
                   </bodyTypes>
-                  <crownTypes>
-                    <Average_Normal>(0,0.00)</Average_Normal>
-                  </crownTypes>
+                  <headTypes>
+                    <GundabadOrc_Average_Normal>(0,0.1)</GundabadOrc_Average_Normal>
+                  </headTypes>
                 </south>
                 <north>
                   <layerOffset>0</layerOffset>
                   <bodyTypes>
-                    <Male>(0,0.79)</Male>
-                    <Female>(0,0.79)</Female>
-                    <Fat>(0,0.79)</Fat>
-                    <Thin>(0,0.79)</Thin>
+                    <Male>(0,0.82)</Male>
+                    <Female>(0,0.82)</Female>
+                    <Fat>(0,0.82)</Fat>
+                    <Thin>(0,0.82)</Thin>
+                    <Hulk>(0,0.82)</Hulk>
+                    <Baby MayRequire="ludeon.rimworld.biotech">(0,0.82)</Baby>
+                    <Child MayRequire="ludeon.rimworld.biotech">(0,0.82)</Child>
                   </bodyTypes>
-                  <crownTypes>
-                    <Average_Normal>(0,0.0)</Average_Normal>
-                  </crownTypes>
+                  <headTypes>
+                    <GundabadOrc_Average_Normal>(0,0.1)</GundabadOrc_Average_Normal>
+                  </headTypes>
                 </north>
                 <east>
                   <layerOffset>0</layerOffset>
                   <bodyTypes>
-                    <Male>(-0.5,0.45)</Male>
-                    <Female>(-0.5,0.45)</Female>
-                    <Fat>(-0.5,0.45)</Fat>
-                    <Thin>(-0.5,0.45)</Thin>
+                    <Male>(-0.5,0.5)</Male>
+                    <Female>(-0.5,0.5)</Female>
+                    <Fat>(-0.5,0.5)</Fat>
+                    <Thin>(-0.5,0.5)</Thin>
+                    <Hulk>(-0.5,0.5)</Hulk>
+                    <Baby MayRequire="ludeon.rimworld.biotech">(-0.5,0.5)</Baby>
+                    <Child MayRequire="ludeon.rimworld.biotech">(-0.5,0.5)</Child>
                   </bodyTypes>
-                  <crownTypes>
-                    <Average_Normal>(0,0.0)</Average_Normal>
-                  </crownTypes>
+                  <headTypes>
+                    <GundabadOrc_Average_Normal>(0,0.1)</GundabadOrc_Average_Normal>
+                  </headTypes>
                 </east>
               </offsets>
               <colorChannel>skin</colorChannel>
-              <hiddenUnderApparelFor>
-                <li>FullHead</li>
-              </hiddenUnderApparelFor>
             </li>
           </bodyAddons>
           <colorChannels>
@@ -203,16 +218,15 @@
               </first>
             </li>
           </colorChannels>
-          <customDrawSize>(0.9, 0.9)</customDrawSize>
-          <customHeadDrawSize>(0.9, 0.9)</customHeadDrawSize>
-          <customPortraitDrawSize>(0.9, 0.9)</customPortraitDrawSize>
-          <headOffset>(0.0, -0.07)</headOffset>
+          <customDrawSize>(0.95, 0.95)</customDrawSize>
+          <customHeadDrawSize>(0.95, 0.95)</customHeadDrawSize>
+          <customPortraitDrawSize>(0.95, 0.95)</customPortraitDrawSize>
+          <headOffset>(0.0, -0.0)</headOffset>
         </alienPartGenerator>
       </generalSettings>
       <graphicPaths>
-        <li>
-          <head>MordorOrc/Heads/</head>
-        </li>
+        <head>GundabadOrc/Heads/</head>
+        <skinShader>Cutout</skinShader>
       </graphicPaths>
       <styleSettings>
         <li>
@@ -238,29 +252,38 @@
           <li>NeedOutdoors</li>
           <li>NeedBeauty</li>
         </cannotReceiveThoughts>
-        <replacerList>
-          <li>
-            <original>AteInImpressiveDiningRoom</original>
-            <replacer>LotROG_AteInImpressiveDiningRoom</replacer>
-          </li>
-          <li>
-            <original>JoyActivityInImpressiveRecRoom</original>
-            <replacer>LotROG_JoyActivityInImpressiveRecRoom</replacer>
-          </li>
-          <li>
-            <original>SleptInBedroom</original>
-            <replacer>LotROG_SleptInBedroom</replacer>
-          </li>
-          <li>
-            <original>SleptInBarracks</original>
-            <replacer>LotROG_SleptInBarracks</replacer>
-          </li>
-          <!-- <li> -->
-          <!-- <original>NeedBeauty</original> -->
-          <!-- <replacer>LotROG_NeedBeauty</replacer> -->
-          <!-- </li> -->
-        </replacerList>
       </thoughtSettings>
+      <raceRestriction>
+        <blackGeneList>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
+        </blackGeneList>
+        <blackGeneTags>
+          <li>SkinColor</li>
+          <li>HairColor</li>
+          <li>EyeColor</li>
+          <li>BodyType</li>
+          <li>Ears</li>
+          <li>Nose</li>
+          <li>Jaw</li>
+          <li>Head</li>
+          <li>Headbone</li>
+          <li>HairStyle</li>
+          <li>BeardStyle</li>
+          <li>SkinColorOverride</li>
+          <li>Fur</li>
+          <li>Tail</li>
+        </blackGeneTags>
+        <blackEndoCategories>
+          <li>Melanin</li>
+          <li>HairColor</li>
+          <li>Ears</li>
+          <li>Nose</li>
+          <li>Jaw</li>
+          <li>Head</li>
+          <li>BodyType</li>
+        </blackEndoCategories>
+      </raceRestriction>
     </alienRace>
     <!--<uiIconPath>Things/Pawn/Humanlike/UI/IconHuman</uiIconPath>-->
     <statBases>
@@ -315,17 +338,17 @@
         <power>4</power>
         <cooldownTime>1.8</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
     <race>
+      <renderTree>Humanlike</renderTree>
       <thinkTreeMain>Humanlike</thinkTreeMain>
       <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
       <intelligence>Humanlike</intelligence>
       <makesFootprints>true</makesFootprints>
-      <lifeExpectancy>80</lifeExpectancy>
-      <leatherDef>LotROG_Leather_Goblin</leatherDef>
+      <lifeExpectancy>150</lifeExpectancy>
       <nameCategory>HumanStandard</nameCategory>
+      <leatherDef>LotROG_Leather_Goblin</leatherDef>
       <body>Human</body>
       <baseBodySize>0.8</baseBodySize>
       <baseHealthScale>0.8</baseHealthScale>
@@ -347,11 +370,11 @@
           <minAge>0</minAge>
         </li>
         <li>
-          <def>HumanlikeToddler</def>
+          <def>HumanlikeChild</def>
           <minAge>1</minAge>
         </li>
-        <li>
-          <def>HumanlikeChild</def>
+        <li MayRequire="Ludeon.RimWorld.Biotech">
+          <def>HumanlikePreTeenager</def>
           <minAge>2</minAge>
         </li>
         <li>
@@ -364,7 +387,7 @@
         </li>
       </lifeStageAges>
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Generic</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
       <specialShadowData>
         <volume>(0.3, 0.8, 0.4)</volume>
@@ -372,9 +395,21 @@
       </specialShadowData>
       <ageGenerationCurve>
         <points>
-          <li>(3,0)</li>
-          <li>(5,100)</li>
-          <li>(10,80)</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li>
+          <!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->
+          <li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li>
+          <!-- End exclude -->
+          <li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
+          <li>(14,0)</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
+          <!-- <li>(3,0)</li> -->
+          <!-- <li>(5,100)</li> -->
+          <!-- <li>(10,80)</li> -->
           <li>(15,25)</li>
           <li>(20,10)</li>
           <li>(25,0)</li>
