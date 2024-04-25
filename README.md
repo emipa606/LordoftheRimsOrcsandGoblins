@@ -5,7 +5,7 @@
 Update of Mingji Lim aka WalkingProblems mod
 https://github.com/Lord-of-the-Rims-DevTeam/Lord-of-the-Rims---Orcs-and-Goblins
 
-![Image](https://i.imgur.com/pufA0kM.png)
+![Image](https://i.imgur.com/KFjAmff.png)
 
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
